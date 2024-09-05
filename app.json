@@ -26,9 +26,10 @@
       "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-router"],
-    "experiments": {
-      "typedRoutes": true
-    }
+    "asyncRoutes": {
+      "web": true,
+      "default": "development"
+    },
+    "plugins": ["expo-router"]
   }
 }
