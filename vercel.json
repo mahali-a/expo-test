@@ -1,5 +1,5 @@
 {
-  "buildCommand": "expo export -p web",
+  "buildCommand": "expo export -p web && cp vercel.json ./dist && cp -a ./dist/server/. ./dist/client",
   "outputDirectory": "dist/client",
   "functions": {
     "api/index.ts": {
@@ -28,6 +28,7 @@
     }
   ],
   "rewrites": [
+    { "source": "/(.*)", "destination": "/$1.html" },
     {
       "source": "/api/(.*)",
       "destination": "/api/index.ts"
