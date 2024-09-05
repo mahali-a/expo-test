@@ -9,8 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint",
-    "vercel-build": "expo export -p web"
+    "lint": "expo lint"
   },
   "jest": {
     "preset": "jest-expo"
@@ -18,7 +17,7 @@
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/native": "^6.0.2",
-    "expo": "~51.0.28",
+    "expo": "^50.0.18",
     "expo-constants": "~16.0.2",
     "expo-font": "~12.0.9",
     "expo-linking": "~6.3.1",
@@ -45,6 +44,9 @@
     "jest-expo": "~51.0.3",
     "react-test-renderer": "18.2.0",
     "typescript": "~5.3.3"
+  },
+  "overrides": {
+    "@expo/server": "0.5.0-canary-20240904-69100c1"
   },
   "private": true
 }
